@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeBoostNepal | Premium Social Media Growth</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body { font-family: 'Poppins', sans-serif; }
+        .font-logo { font-family: 'Montserrat', sans-serif; }
+        
+        .text-brand-red { color: #DC143C; }
+        .bg-brand-red { background-color: #DC143C; }
+        
+        .bg-glow {
+            background: radial-gradient(circle at 50% -20%, rgba(0, 56, 147, 0.2) 0%, rgba(15, 23, 42, 1) 70%);
+        }
+        
+        .glass-panel {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(71, 85, 105, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-300 antialiased overflow-x-hidden selection:bg-[#DC143C] selection:text-white">
+
+    <nav class="fixed w-full z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <svg width="35" height="24" viewBox="0 0 120 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 80 L45 25 L70 80 Z" fill="#DC143C" />
+                        <path d="M35 80 L75 5 L115 80 Z" fill="#003893" />
+                        <path d="M70 80 L95 40 L120 80 Z" fill="#475569" />
+                        <path d="M45 25 L54 40 L45 45 L36 40 Z" fill="white" />
+                        <path d="M75 5 L88 30 L75 40 L62 30 Z" fill="white" />
+                    </svg>
+                    <span class="font-logo text-xl md:text-2xl font-black text-white tracking-tight">We<span class="text-brand-red">Boost</span>Nepal</span>
+                </div>
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex items-center">
+                    <div class="flex items-baseline space-x-8">
+                        <a href="#home" class="text-white hover:text-brand-red transition font-medium" data-i18n="nav_home">Home</a>
+                        <a href="#services" class="text-slate-300 hover:text-white transition font-medium" data-i18n="nav_services">Services</a>
+                        <a href="#how-it-works" class="text-slate-300 hover:text-white transition font-medium" data-i18n="nav_how">How it Works</a>
+                        <a href="#packages" class="text-slate-300 hover:text-white transition font-medium" data-i18n="nav_packages">Packages</a>
+                        <a href="#about" class="text-slate-300 hover:text-white transition font-medium" data-i18n="nav_about">About</a>
+                        <a href="#contact" class="bg-brand-red hover:bg-rose-700 text-white px-5 py-2.5 rounded-full font-bold transition shadow-lg shadow-rose-900/20" data-i18n="nav_contact">Contact Us</a>
+                    </div>
+                    
+                    <!-- Language Toggle Switch -->
+                    <div class="flex items-center gap-2 ml-8 pl-8 border-l border-slate-700">
+                        <span class="text-xs font-bold transition-colors text-white" id="lang-en-label">EN</span>
+                        <button id="languageToggle" class="relative inline-flex h-6 w-11 items-center rounded-full bg-slate-700 transition-colors focus:outline-none">
+                            <span id="toggle-knob" class="inline-block h-4 w-4 transform rounded-full bg-white transition duration-200 ease-in-out translate-x-1"></span>
+                        </button>
+                        <span class="text-xs font-bold transition-colors text-slate-500" id="lang-ne-label">ने</span>
+                    </div>
+                </div>
+                
+                <!-- Mobile Menu Button (Visual Only) -->
+                <div class="lg:hidden flex items-center gap-4">
+                    <!-- Mobile Lang Toggle -->
+                    <button id="languageToggleMobile" class="text-xs font-bold bg-slate-800 px-3 py-1.5 rounded-full border border-slate-700 text-white">EN / ने</button>
+                    <button class="text-slate-300 hover:text-white p-2">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative pt-32 pb-16 md:pt-48 md:pb-24 bg-glow">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-4xl mx-auto">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-panel text-xs md:text-sm font-semibold text-slate-300 mb-6">
+                    <span class="relative flex h-3 w-3">
+                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                      <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+                    </span>
+                    <span data-i18n="hero_badge">Trusted by 1,000+ Creators in Nepal</span>
+                </div>
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight tracking-tight" data-i18n="hero_title">
+                    Dominate the <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#DC143C] to-rose-400">Algorithms</span><br>Instantly.
+                </h1>
+                <p class="text-lg md:text-xl text-slate-400 mb-10 max-w-2xl mx-auto leading-relaxed" data-i18n="hero_desc">
+                    Shine in the digital world. The ultimate SMM solution to boost your Followers, Likes, and Views across Facebook, TikTok, Instagram, and YouTube.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#packages" class="bg-white text-slate-900 px-8 py-4 rounded-full font-bold text-lg hover:bg-slate-200 transition shadow-xl shadow-white/10" data-i18n="btn_pricing">View Pricing</a>
+                    <a href="#services" class="bg-transparent border border-slate-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-slate-800 transition" data-i18n="btn_explore">Explore Services</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Floating Brand Elements Background -->
+        <div class="absolute inset-0 overflow-hidden pointer-events-none opacity-20">
+            <i class="fa-brands fa-tiktok text-6xl text-white absolute top-40 left-[10%] blur-[2px] animate-pulse"></i>
+            <i class="fa-brands fa-instagram text-7xl text-pink-500 absolute bottom-20 right-[15%] blur-[1px]"></i>
+            <i class="fa-solid fa-heart text-5xl text-brand-red absolute top-60 right-[20%] blur-[3px]"></i>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-slate-900 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4" data-i18n="srv_main_title">Platform Growth</h2>
+                <div class="h-1 w-20 bg-brand-red mx-auto rounded-full mb-6"></div>
+                <p class="text-slate-400 max-w-2xl mx-auto" data-i18n="srv_main_desc">Targeted strategies to trigger the algorithm on your favorite platforms.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- TikTok -->
+                <div class="glass-panel rounded-3xl p-8 hover:-translate-y-2 transition duration-300">
+                    <div class="w-14 h-14 rounded-full bg-black border border-slate-700 flex items-center justify-center text-white text-2xl mb-6">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2" data-i18n="srv_tk_title">TikTok Boost</h3>
+                    <p class="text-slate-400 mb-4 text-sm" data-i18n="srv_tk_desc">Hit the FYP faster with rapid engagement delivery.</p>
+                    <ul class="space-y-2 text-sm text-slate-300">
+                        <li><i class="fa-solid fa-angle-right text-brand-red mr-2"></i> <span data-i18n="srv_tk_1">Viral Video Views</span></li>
+                        <li><i class="fa-solid fa-angle-right text-brand-red mr-2"></i> <span data-i18n="srv_tk_2">Targeted Followers</span></li>
+                        <li><i class="fa-solid fa-angle-right text-brand-red mr-2"></i> <span data-i18n="srv_tk_3">Live Stream Viewers</span></li>
+                    </ul>
+                </div>
+
+                <!-- Instagram -->
+                <div class="glass-panel rounded-3xl p-8 hover:-translate-y-2 transition duration-300">
+                    <div class="w-14 h-14 rounded-full bg-gradient-to-tr from-yellow-400 via-rose-500 to-purple-600 flex items-center justify-center text-white text-2xl mb-6">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2" data-i18n="srv_ig_title">Instagram Elite</h3>
+                    <p class="text-slate-400 mb-4 text-sm" data-i18n="srv_ig_desc">Build an aesthetic, highly engaged community.</p>
+                    <ul class="space-y-2 text-sm text-slate-300">
+                        <li><i class="fa-solid fa-angle-right text-brand-red mr-2"></i> <span data-i18n="srv_ig_1">Reel Views & Saves</span></li>
+                        <li><i class="fa-solid fa-angle-right text-brand-red mr-2"></i> <span data-i18n="srv_ig_2">High-Quality Followers</span></li>
+                        <li><i class="fa-solid fa-angle-right text-brand-red mr-2"></i> <span data-i18n="srv_ig_3">Post Likes & Comments</span></li>
+                    </ul>
+                </div>
+
+                <!-- Facebook -->
+                <div class="glass-panel rounded-3xl p-8 hover:-translate-y-2 transition duration-300">
+                    <div class="w-14 h-14 rounded-full bg-[#1877f2] flex items-center justify-center text-white text-2xl mb-6">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2" data-i18n="srv_fb_title">Facebook Authority</h3>
+                    <p class="text-slate-400 mb-4 text-sm" data-i18n="srv_fb_desc">Gain trust for your business page or creator profile.</p>
+                    <ul class="space-y-2 text-sm text-slate-300">
+                        <li><i class="fa-solid fa-angle-right text-brand-red mr-2"></i> <span data-i18n="srv_fb_1">Page Likes</span></li>
+                        <li><i class="fa-solid fa-angle-right text-brand-red mr-2"></i> <span data-i18n="srv_fb_2">Post Reactions</span></li>
+                        <li><i class="fa-solid fa-angle-right text-brand-red mr-2"></i> <span data-i18n="srv_fb_3">Video Monetization</span></li>
+                    </ul>
+                </div>
+
+                <!-- YouTube -->
+                <div class="glass-panel rounded-3xl p-8 hover:-translate-y-2 transition duration-300">
+                    <div class="w-14 h-14 rounded-full bg-[#ff0000] flex items-center justify-center text-white text-2xl mb-6">
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2" data-i18n="srv_yt_title">YouTube Partner</h3>
+                    <p class="text-slate-400 mb-4 text-sm" data-i18n="srv_yt_desc">Achieve your monetization goals quickly and safely.</p>
+                    <ul class="space-y-2 text-sm text-slate-300">
+                        <li><i class="fa-solid fa-angle-right text-brand-red mr-2"></i> <span data-i18n="srv_yt_1">Permanent Subscribers</span></li>
+                        <li><i class="fa-solid fa-angle-right text-brand-red mr-2"></i> <span data-i18n="srv_yt_2">Watch Time Hours</span></li>
+                        <li><i class="fa-solid fa-angle-right text-brand-red mr-2"></i> <span data-i18n="srv_yt_3">Retention Views</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="py-20 bg-[#0B1120]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4" data-i18n="how_main_title">How It Works</h2>
+                <div class="h-1 w-20 bg-[#003893] mx-auto rounded-full mb-6"></div>
+                <p class="text-slate-400" data-i18n="how_main_desc">Three simple steps to supercharge your social media.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+                <!-- Connecting Line (Desktop) -->
+                <div class="hidden md:block absolute top-12 left-1/6 right-1/6 h-0.5 bg-slate-700 z-0"></div>
+
+                <div class="relative z-10 text-center">
+                    <div class="w-24 h-24 mx-auto bg-slate-800 border-4 border-slate-900 rounded-full flex items-center justify-center text-3xl text-white font-black mb-6 shadow-xl">1</div>
+                    <h3 class="text-xl font-bold text-white mb-3" data-i18n="how_1_title">Choose Your Package</h3>
+                    <p class="text-slate-400 text-sm" data-i18n="how_1_desc">Select the service and quantity you need for your chosen platform.</p>
+                </div>
+
+                <div class="relative z-10 text-center">
+                    <div class="w-24 h-24 mx-auto bg-brand-blue border-4 border-slate-900 rounded-full flex items-center justify-center text-3xl text-white font-black mb-6 shadow-xl">2</div>
+                    <h3 class="text-xl font-bold text-white mb-3" data-i18n="how_2_title">Provide the Link</h3>
+                    <p class="text-slate-400 text-sm" data-i18n="how_2_desc">Give us the public link to your profile or post. No password required.</p>
+                </div>
+
+                <div class="relative z-10 text-center">
+                    <div class="w-24 h-24 mx-auto bg-brand-red border-4 border-slate-900 rounded-full flex items-center justify-center text-3xl text-white font-black mb-6 shadow-xl">3</div>
+                    <h3 class="text-xl font-bold text-white mb-3" data-i18n="how_3_title">Watch it Grow</h3>
+                    <p class="text-slate-400 text-sm" data-i18n="how_3_desc">Sit back and watch the engagement roll in rapidly and safely.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="py-20 bg-slate-900 border-y border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4" data-i18n="pkg_main_title">Popular Packages</h2>
+                <div class="h-1 w-20 bg-brand-red mx-auto rounded-full mb-6"></div>
+                <p class="text-slate-400" data-i18n="pkg_main_desc">Custom packages available. Contact us for bulk Nepali SMM orders.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Starter -->
+                <div class="glass-panel rounded-3xl p-8 flex flex-col">
+                    <h3 class="text-xl font-bold text-slate-300 mb-2" data-i18n="pkg_1_title">Starter</h3>
+                    <p class="text-slate-400 text-sm mb-6" data-i18n="pkg_1_desc">Perfect for testing the waters.</p>
+                    <div class="text-4xl font-black text-white mb-6">Rs. 499<span class="text-lg text-slate-500 font-medium">/order</span></div>
+                    <ul class="space-y-4 mb-8 flex-1">
+                        <li class="flex items-center text-slate-300 text-sm"><i class="fa-solid fa-check text-green-500 mr-3"></i> <span data-i18n="pkg_1_f1">1,000 High-Quality Views</span></li>
+                        <li class="flex items-center text-slate-300 text-sm"><i class="fa-solid fa-check text-green-500 mr-3"></i> <span data-i18n="pkg_1_f2">100 Post Likes</span></li>
+                        <li class="flex items-center text-slate-300 text-sm"><i class="fa-solid fa-check text-green-500 mr-3"></i> <span data-i18n="pkg_1_f3">Fast Delivery</span></li>
+                    </ul>
+                    <a href="#contact" class="w-full block text-center bg-slate-800 hover:bg-slate-700 border border-slate-600 text-white py-3 rounded-xl font-bold transition" data-i18n="btn_order">Order Now</a>
+                </div>
+
+                <!-- Pro (Highlighted) -->
+                <div class="bg-gradient-to-b from-brand-red to-rose-900 rounded-3xl p-1 shadow-2xl shadow-rose-900/30 transform md:-translate-y-4">
+                    <div class="bg-slate-900 rounded-[23px] p-8 h-full flex flex-col relative overflow-hidden">
+                        <div class="absolute top-0 right-0 bg-brand-red text-white text-xs font-bold px-3 py-1 rounded-bl-lg" data-i18n="pkg_badge">MOST POPULAR</div>
+                        <h3 class="text-xl font-bold text-brand-red mb-2" data-i18n="pkg_2_title">Professional</h3>
+                        <p class="text-slate-400 text-sm mb-6" data-i18n="pkg_2_desc">Best for growing creators.</p>
+                        <div class="text-4xl font-black text-white mb-6">Rs. 1,499<span class="text-lg text-slate-500 font-medium">/order</span></div>
+                        <ul class="space-y-4 mb-8 flex-1">
+                            <li class="flex items-center text-slate-300 text-sm"><i class="fa-solid fa-check text-brand-red mr-3"></i> <span data-i18n="pkg_2_f1">5,000 High-Quality Views</span></li>
+                            <li class="flex items-center text-slate-300 text-sm"><i class="fa-solid fa-check text-brand-red mr-3"></i> <span data-i18n="pkg_2_f2">500 Premium Followers</span></li>
+                            <li class="flex items-center text-slate-300 text-sm"><i class="fa-solid fa-check text-brand-red mr-3"></i> <span data-i18n="pkg_2_f3">500 Post Likes</span></li>
+                            <li class="flex items-center text-slate-300 text-sm"><i class="fa-solid fa-check text-brand-red mr-3"></i> <span data-i18n="pkg_2_f4">24/7 Priority Support</span></li>
+                        </ul>
+                        <a href="#contact" class="w-full block text-center bg-brand-red hover:bg-rose-700 text-white py-3 rounded-xl font-bold transition" data-i18n="btn_order">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Elite -->
+                <div class="glass-panel rounded-3xl p-8 flex flex-col">
+                    <h3 class="text-xl font-bold text-slate-300 mb-2" data-i18n="pkg_3_title">Elite</h3>
+                    <p class="text-slate-400 text-sm mb-6" data-i18n="pkg_3_desc">For brands and businesses.</p>
+                    <div class="text-4xl font-black text-white mb-6">Rs. 4,999<span class="text-lg text-slate-500 font-medium">/order</span></div>
+                    <ul class="space-y-4 mb-8 flex-1">
+                        <li class="flex items-center text-slate-300 text-sm"><i class="fa-solid fa-check text-brand-blue mr-3"></i> <span data-i18n="pkg_3_f1">20,000 High-Quality Views</span></li>
+                        <li class="flex items-center text-slate-300 text-sm"><i class="fa-solid fa-check text-brand-blue mr-3"></i> <span data-i18n="pkg_3_f2">2,500 Premium Followers</span></li>
+                        <li class="flex items-center text-slate-300 text-sm"><i class="fa-solid fa-check text-brand-blue mr-3"></i> <span data-i18n="pkg_3_f3">1,000 Post Likes</span></li>
+                        <li class="flex items-center text-slate-300 text-sm"><i class="fa-solid fa-check text-brand-blue mr-3"></i> <span data-i18n="pkg_3_f4">Drip Feed Delivery</span></li>
+                    </ul>
+                    <a href="#contact" class="w-full block text-center bg-slate-800 hover:bg-slate-700 border border-slate-600 text-white py-3 rounded-xl font-bold transition" data-i18n="btn_order">Order Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About & FAQ Section -->
+    <section id="about" class="py-20 bg-[#0B1120]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row gap-16">
+                
+                <!-- About Info -->
+                <div class="w-full lg:w-1/2">
+                    <h2 class="text-3xl font-bold text-white mb-6" data-i18n="abt_title">About WeBoostNepal</h2>
+                    <p class="text-lg text-slate-300 mb-6 font-medium" data-i18n="abt_sub">
+                        We are dedicated to taking your digital presence to new heights.
+                    </p>
+                    <p class="text-slate-400 mb-8 leading-relaxed" data-i18n="abt_desc">
+                        We provide professional Social Media Marketing services tailored for the Nepali market and beyond. Whether you are an emerging artist on TikTok, a local business on Facebook, or a vlogger on YouTube, we supply the initial engagement boost required to trigger algorithms and attract organic audiences.
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center text-brand-red"><i class="fa-solid fa-shield-check text-xl"></i></div>
+                        <span class="text-white font-bold" data-i18n="abt_safe">100% Safe & Secure Delivery</span>
+                    </div>
+                </div>
+
+                <!-- FAQ Accordion (Visual) -->
+                <div class="w-full lg:w-1/2 space-y-4">
+                    <h2 class="text-3xl font-bold text-white mb-6" data-i18n="faq_title">Frequent Questions</h2>
+                    
+                    <div class="glass-panel p-5 rounded-xl border-l-4 border-l-brand-red">
+                        <h4 class="text-white font-bold mb-2" data-i18n="faq_1_q">Do you need my account password?</h4>
+                        <p class="text-slate-400 text-sm" data-i18n="faq_1_a">Never. We only require the public URL/link to your profile or the specific post you want to boost. Your account remains 100% secure.</p>
+                    </div>
+                    
+                    <div class="glass-panel p-5 rounded-xl border-l-4 border-l-slate-600">
+                        <h4 class="text-white font-bold mb-2" data-i18n="faq_2_q">How fast is the delivery?</h4>
+                        <p class="text-slate-400 text-sm" data-i18n="faq_2_a">Most orders (like Views and Likes) begin processing within minutes of confirmation. Larger follower packages are delivered gradually to appear natural.</p>
+                    </div>
+
+                    <div class="glass-panel p-5 rounded-xl border-l-4 border-l-slate-600">
+                        <h4 class="text-white font-bold mb-2" data-i18n="faq_3_q">Can I pay using Esewa/Khalti?</h4>
+                        <p class="text-slate-400 text-sm" data-i18n="faq_3_a">Yes! We proudly accept all major Nepali digital wallets including Esewa, Khalti, and Mobile Banking transfers.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / CTA -->
+    <footer id="contact" class="bg-slate-900 pt-20 pb-10 border-t border-slate-800">
+        <div class="max-w-4xl mx-auto px-4 text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6" data-i18n="ftr_title">Ready to boost your profile?</h2>
+            <p class="text-slate-400 mb-8" data-i18n="ftr_desc">Send us a message with your requirements and let's get your numbers up today.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="https://wa.me/9779829379372" target="_blank" rel="noopener noreferrer" class="bg-[#25D366] text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-[#1ebe5b] transition flex items-center justify-center gap-2 shadow-lg shadow-green-900/20">
+                    <i class="fa-brands fa-whatsapp text-2xl"></i> <span data-i18n="ftr_wa">Chat on WhatsApp (+977 982-9379372)</span>
+                </a>
+                <a href="javascript:void(0)" class="bg-[#1877f2] text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-blue-600 transition flex items-center justify-center gap-2 shadow-lg shadow-blue-900/20">
+                    <i class="fa-brands fa-facebook-messenger text-2xl"></i> <span data-i18n="ftr_fb">FB Messenger</span>
+                </a>
+            </div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-2">
+                <svg width="25" height="17" viewBox="0 0 120 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 80 L45 25 L70 80 Z" fill="#DC143C" />
+                    <path d="M35 80 L75 5 L115 80 Z" fill="#003893" />
+                </svg>
+                <span class="font-logo text-lg font-black text-slate-300 tracking-tight">WeBoostNepal</span>
+            </div>
+            <p class="text-slate-500 text-sm">© 2024 WeBoostNepal. All rights reserved.</p>
+            <div class="flex gap-4 text-slate-400">
+                <a href="javascript:void(0)" class="hover:text-white transition"><i class="fa-brands fa-facebook text-xl"></i></a>
+                <a href="javascript:void(0)" class="hover:text-white transition"><i class="fa-brands fa-instagram text-xl"></i></a>
+                <a href="javascript:void(0)" class="hover:text-white transition"><i class="fa-brands fa-tiktok text-xl"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Language Translation Script -->
+    <script>
+        const translations = {
+            "nav_home": { "en": "Home", "ne": "गृहपृष्ठ" },
+            "nav_services": { "en": "Services", "ne": "सेवाहरू" },
+            "nav_how": { "en": "How it Works", "ne": "प्रक्रिया" },
+            "nav_packages": { "en": "Packages", "ne": "प्याकेजहरू" },
+            "nav_about": { "en": "About", "ne": "हाम्रो बारेमा" },
+            "nav_contact": { "en": "Contact Us", "ne": "सम्पर्क गर्नुहोस्" },
+
+            "hero_badge": { "en": "Trusted by 1,000+ Creators in Nepal", "ne": "नेपालका १०००+ सिर्जनाकर्ताहरूको रोजाइ" },
+            "hero_title": { 
+                "en": "Dominate the <span class='text-transparent bg-clip-text bg-gradient-to-r from-[#DC143C] to-rose-400'>Algorithms</span><br>Instantly.", 
+                "ne": "<span class='text-transparent bg-clip-text bg-gradient-to-r from-[#DC143C] to-rose-400'>अल्गोरिदममा</span> तुरुन्तै<br>हावी हुनुहोस्।" 
+            },
+            "hero_desc": { 
+                "en": "Shine in the digital world. The ultimate SMM solution to boost your Followers, Likes, and Views across Facebook, TikTok, Instagram, and YouTube.", 
+                "ne": "डिजिटल संसारमा छाउनुहोस्। फेसबुक, टिकटक, इन्स्टाग्राम र युट्युबमा तपाईंका फलोअर्स, लाइक्स र भ्यूज बढाउने उत्कृष्ट SMM समाधान।" 
+            },
+            "btn_pricing": { "en": "View Pricing", "ne": "मूल्य हेर्नुहोस्" },
+            "btn_explore": { "en": "Explore Services", "ne": "सेवाहरू हेर्नुहोस्" },
+
+            "srv_main_title": { "en": "Platform Growth", "ne": "प्लेटफर्म वृद्धि" },
+            "srv_main_desc": { "en": "Targeted strategies to trigger the algorithm on your favorite platforms.", "ne": "तपाईंको मनपर्ने प्लेटफर्महरूमा अल्गोरिदम ट्रिगर गर्ने लक्षित रणनीतिहरू।" },
+            
+            "srv_tk_title": { "en": "TikTok Boost", "ne": "टिकटक बुस्ट" },
+            "srv_tk_desc": { "en": "Hit the FYP faster with rapid engagement delivery.", "ne": "द्रुत संलग्नताको साथ छिटो FYP मा पुग्नुहोस्।" },
+            "srv_tk_1": { "en": "Viral Video Views", "ne": "भाइरल भिडियो भ्युज" },
+            "srv_tk_2": { "en": "Targeted Followers", "ne": "लक्षित फलोअर्स" },
+            "srv_tk_3": { "en": "Live Stream Viewers", "ne": "लाइभ स्ट्रिम दर्शकहरू" },
+
+            "srv_ig_title": { "en": "Instagram Elite", "ne": "इन्स्टाग्राम एलिट" },
+            "srv_ig_desc": { "en": "Build an aesthetic, highly engaged community.", "ne": "एक आकर्षक र अत्यधिक संलग्न समुदाय निर्माण गर्नुहोस्।" },
+            "srv_ig_1": { "en": "Reel Views & Saves", "ne": "रिल भ्युज र सेभ्स" },
+            "srv_ig_2": { "en": "High-Quality Followers", "ne": "उच्च गुणस्तरका फलोअर्स" },
+            "srv_ig_3": { "en": "Post Likes & Comments", "ne": "पोस्ट लाइक्स र कमेन्ट्स" },
+
+            "srv_fb_title": { "en": "Facebook Authority", "ne": "फेसबुक अथोरिटी" },
+            "srv_fb_desc": { "en": "Gain trust for your business page or creator profile.", "ne": "तपाईंको व्यापार पृष्ठ वा प्रोफाइलको लागि विश्वास प्राप्त गर्नुहोस्।" },
+            "srv_fb_1": { "en": "Page Likes", "ne": "पेज लाइक्स" },
+            "srv_fb_2": { "en": "Post Reactions", "ne": "पोस्ट रियाक्सन" },
+            "srv_fb_3": { "en": "Video Monetization", "ne": "भिडियो मोनिटाइजेसन" },
+
+            "srv_yt_title": { "en": "YouTube Partner", "ne": "युट्युब पार्टनर" },
+            "srv_yt_desc": { "en": "Achieve your monetization goals quickly and safely.", "ne": "तपाईंको मुद्रीकरण लक्ष्यहरू छिटो र सुरक्षित रूपमा प्राप्त गर्नुहोस्।" },
+            "srv_yt_1": { "en": "Permanent Subscribers", "ne": "स्थायी सब्सक्राइबरहरू" },
+            "srv_yt_2": { "en": "Watch Time Hours", "ne": "वाच टाइम (घण्टा)" },
+            "srv_yt_3": { "en": "Retention Views", "ne": "रिटेन्सन भ्युज" },
+
+            "how_main_title": { "en": "How It Works", "ne": "यसले कसरी काम गर्छ" },
+            "how_main_desc": { "en": "Three simple steps to supercharge your social media.", "ne": "तपाईंको सोशल मिडियालाई सुपरचार्ज गर्न तीन सरल चरणहरू।" },
+            "how_1_title": { "en": "Choose Your Package", "ne": "आफ्नो प्याकेज छान्नुहोस्" },
+            "how_1_desc": { "en": "Select the service and quantity you need for your chosen platform.", "ne": "आफ्नो प्लेटफर्मको लागि आवश्यक सेवा र मात्रा चयन गर्नुहोस्।" },
+            "how_2_title": { "en": "Provide the Link", "ne": "लिङ्क दिनुहोस्" },
+            "how_2_desc": { "en": "Give us the public link to your profile or post. No password required.", "ne": "हामीलाई तपाईंको प्रोफाइल वा पोस्टको लिङ्क दिनुहोस्। पासवर्ड आवश्यक छैन।" },
+            "how_3_title": { "en": "Watch it Grow", "ne": "वृद्धि हेर्नुहोस्" },
+            "how_3_desc": { "en": "Sit back and watch the engagement roll in rapidly and safely.", "ne": "आराम गर्नुहोस् र छिटो र सुरक्षित रूपमा संलग्नता बढेको हेर्नुहोस्।" },
+
+            "pkg_main_title": { "en": "Popular Packages", "ne": "लोकप्रिय प्याकेजहरू" },
+            "pkg_main_desc": { "en": "Custom packages available. Contact us for bulk Nepali SMM orders.", "ne": "कस्टम प्याकेजहरू उपलब्ध छन्। ठूला अर्डरहरूको लागि हामीलाई सम्पर्क गर्नुहोस्।" },
+            
+            "pkg_1_title": { "en": "Starter", "ne": "सुरुवाती" },
+            "pkg_1_desc": { "en": "Perfect for testing the waters.", "ne": "परीक्षणको लागि उत्तम।" },
+            "pkg_1_f1": { "en": "1,000 High-Quality Views", "ne": "१,००० उच्च गुणस्तर भ्युज" },
+            "pkg_1_f2": { "en": "100 Post Likes", "ne": "१०० पोस्ट लाइक्स" },
+            "pkg_1_f3": { "en": "Fast Delivery", "ne": "छिटो डेलिभरी" },
+
+            "pkg_badge": { "en": "MOST POPULAR", "ne": "सबैभन्दा लोकप्रिय" },
+            "pkg_2_title": { "en": "Professional", "ne": "व्यावसायिक" },
+            "pkg_2_desc": { "en": "Best for growing creators.", "ne": "बढ्दो सिर्जनाकर्ताहरूको लागि उत्तम।" },
+            "pkg_2_f1": { "en": "5,000 High-Quality Views", "ne": "५,००० उच्च गुणस्तर भ्युज" },
+            "pkg_2_f2": { "en": "500 Premium Followers", "ne": "५०० प्रिमियम फलोअर्स" },
+            "pkg_2_f3": { "en": "500 Post Likes", "ne": "५०० पोस्ट लाइक्स" },
+            "pkg_2_f4": { "en": "24/7 Priority Support", "ne": "२४/७ प्राथमिकता समर्थन" },
+
+            "pkg_3_title": { "en": "Elite", "ne": "एलिट" },
+            "pkg_3_desc": { "en": "For brands and businesses.", "ne": "ब्रान्ड र व्यवसायहरूको लागि।" },
+            "pkg_3_f1": { "en": "20,000 High-Quality Views", "ne": "२०,००० उच्च गुणस्तर भ्युज" },
+            "pkg_3_f2": { "en": "2,500 Premium Followers", "ne": "२,५०० प्रिमियम फलोअर्स" },
+            "pkg_3_f3": { "en": "1,000 Post Likes", "ne": "१,००० पोस्ट लाइक्स" },
+            "pkg_3_f4": { "en": "Drip Feed Delivery", "ne": "क्रमिक डेलिभरी" },
+            
+            "btn_order": { "en": "Order Now", "ne": "अर्डर गर्नुहोस्" },
+
+            "abt_title": { "en": "About WeBoostNepal", "ne": "WeBoostNepal को बारेमा" },
+            "abt_sub": { "en": "We are dedicated to taking your digital presence to new heights.", "ne": "हामी तपाईंको डिजिटल उपस्थितिलाई नयाँ उचाइमा पुर्‍याउन समर्पित छौं।" },
+            "abt_desc": { "en": "We provide professional Social Media Marketing services tailored for the Nepali market and beyond. Whether you are an emerging artist on TikTok, a local business on Facebook, or a vlogger on YouTube, we supply the initial engagement boost required to trigger algorithms and attract organic audiences.", "ne": "हामी नेपाली बजार र त्यसभन्दा बाहिरका लागि व्यावसायिक सोशल मिडिया मार्केटिङ सेवाहरू प्रदान गर्छौं। चाहे तपाईं टिकटकमा उदाउँदो कलाकार हुनुहुन्छ, फेसबुकमा स्थानीय व्यवसाय, वा युट्युबमा भ्लगर हुनुहुन्छ, हामी अल्गोरिदम ट्रिगर गर्न र जैविक दर्शकहरूलाई आकर्षित गर्न आवश्यक प्रारम्भिक संलग्नता प्रदान गर्दछौं।" },
+            "abt_safe": { "en": "100% Safe & Secure Delivery", "ne": "१००% सुरक्षित र भरपर्दो डेलिभरी" },
+
+            "faq_title": { "en": "Frequent Questions", "ne": "बारम्बार सोधिने प्रश्नहरू" },
+            "faq_1_q": { "en": "Do you need my account password?", "ne": "के तपाईंलाई मेरो पासवर्ड चाहिन्छ?" },
+            "faq_1_a": { "en": "Never. We only require the public URL/link to your profile or the specific post you want to boost. Your account remains 100% secure.", "ne": "कहिल्यै होइन। हामीलाई केवल तपाईंको सार्वजनिक URL/लिङ्क चाहिन्छ। तपाईंको खाता १००% सुरक्षित रहन्छ।" },
+            "faq_2_q": { "en": "How fast is the delivery?", "ne": "डेलिभरी कति छिटो हुन्छ?" },
+            "faq_2_a": { "en": "Most orders (like Views and Likes) begin processing within minutes of confirmation. Larger follower packages are delivered gradually to appear natural.", "ne": "धेरैजसो अर्डरहरू (जस्तै Views र Likes) पुष्टि भएको केही मिनेटमै सुरु हुन्छन्। ठूला फलोअर प्याकेजहरू स्वाभाविक देखिन बिस्तारै डेलिभर गरिन्छन्।" },
+            "faq_3_q": { "en": "Can I pay using Esewa/Khalti?", "ne": "के म इसेवा/खल्ती प्रयोग गरेर तिर्न सक्छु?" },
+            "faq_3_a": { "en": "Yes! We proudly accept all major Nepali digital wallets including Esewa, Khalti, and Mobile Banking transfers.", "ne": "हो! हामी इसेवा, खल्ती, र मोबाइल बैंकिङ ट्रान्सफर लगायत सबै प्रमुख नेपाली डिजिटल वालेटहरू स्वीकार गर्छौं।" },
+
+            "ftr_title": { "en": "Ready to boost your profile?", "ne": "आफ्नो प्रोफाइल बुस्ट गर्न तयार हुनुहुन्छ?" },
+            "ftr_desc": { "en": "Send us a message with your requirements and let's get your numbers up today.", "ne": "तपाईंको आवश्यकताहरूको साथ हामीलाई सन्देश पठाउनुहोस् र आजै अगाडि बढ्नुहोस्।" },
+            "ftr_wa": { "en": "Chat on WhatsApp (+977 982-9379372)", "ne": "ह्वाट्सएपमा च्याट गर्नुहोस् (+977 982-9379372)" },
+            "ftr_fb": { "en": "FB Messenger", "ne": "फेसबुक मेसेन्जर" }
+        };
+
+        // Initialize state
+        let currentLang = localStorage.getItem('weboost_lang') || 'en';
+
+        function updateLanguageUI(lang) {
+            // Update Toggle Switch Visuals
+            const knob = document.getElementById('toggle-knob');
+            const enLabel = document.getElementById('lang-en-label');
+            const neLabel = document.getElementById('lang-ne-label');
+
+            if (lang === 'ne') {
+                knob.classList.remove('translate-x-1');
+                knob.classList.add('translate-x-6');
+                enLabel.classList.replace('text-white', 'text-slate-500');
+                neLabel.classList.replace('text-slate-500', 'text-white');
+            } else {
+                knob.classList.remove('translate-x-6');
+                knob.classList.add('translate-x-1');
+                neLabel.classList.replace('text-white', 'text-slate-500');
+                enLabel.classList.replace('text-slate-500', 'text-white');
+            }
+
+            // Loop through all elements with data-i18n and replace text/html
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[key] && translations[key][lang]) {
+                    if(translations[key][lang].includes('<')) {
+                        el.innerHTML = translations[key][lang];
+                    } else {
+                        el.textContent = translations[key][lang];
+                    }
+                }
+            });
+        }
+
+        function toggleLanguage() {
+            currentLang = currentLang === 'en' ? 'ne' : 'en';
+            localStorage.setItem('weboost_lang', currentLang);
+            updateLanguageUI(currentLang);
+        }
+
+        // Event Listeners
+        document.getElementById('languageToggle').addEventListener('click', toggleLanguage);
+        document.getElementById('languageToggleMobile').addEventListener('click', toggleLanguage);
+
+        // Run on load
+        updateLanguageUI(currentLang);
+    </script>
+</body>
+</html>
